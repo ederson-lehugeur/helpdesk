@@ -1,11 +1,10 @@
-package br.com.project.helpdesk.repository;
-
-import java.awt.print.Pageable;
+package br.com.project.helpdesk.api.repository;
 
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import br.com.project.helpdesk.entity.Ticket;
+import br.com.project.helpdesk.api.entity.Ticket;
 
 public interface TicketRepository extends MongoRepository<Ticket, String> {
 

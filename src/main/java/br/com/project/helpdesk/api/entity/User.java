@@ -1,4 +1,4 @@
-package br.com.project.helpdesk.entity;
+package br.com.project.helpdesk.api.entity;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -8,7 +8,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import br.com.project.helpdesk.enums.ProfileEnum;
+import br.com.project.helpdesk.api.enums.ProfileEnum;
 
 @Document
 public class User {

@@ -1,4 +1,4 @@
-package br.com.project.helpdesk.service;
+package br.com.project.helpdesk.api.service;
 
 import java.util.Optional;
 
@@ -7,8 +7,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import br.com.project.helpdesk.entity.User;
-import br.com.project.helpdesk.repository.UserRepository;
+import br.com.project.helpdesk.api.entity.User;
+import br.com.project.helpdesk.api.repository.UserRepository;
 
 @Service
 public class UserService {

@@ -1,4 +1,4 @@
-package br.com.project.helpdesk.entity;
+package br.com.project.helpdesk.api.entity;
 
 import java.util.Date;
 
@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import br.com.project.helpdesk.enums.StatusEnum;
+import br.com.project.helpdesk.api.enums.StatusEnum;
 
 @Document
 public class ChangeStatus {

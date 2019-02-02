@@ -1,4 +1,4 @@
-package br.com.project.helpdesk.repository.security.jwt;
+package br.com.project.helpdesk.api.security.jwt;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import br.com.project.helpdesk.entity.User;
-import br.com.project.helpdesk.enums.ProfileEnum;
+import br.com.project.helpdesk.api.entity.User;
+import br.com.project.helpdesk.api.enums.ProfileEnum;
 
 public class JwtUserFactory {
 

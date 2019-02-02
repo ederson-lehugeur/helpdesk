@@ -1,4 +1,4 @@
-package br.com.project.helpdesk.enums;
+package br.com.project.helpdesk.api.enums;
 
 public enum ProfileEnum {
 
