@@ -65,7 +65,7 @@ public class TicketService {
 		PageRequest pageRequest = PageRequest.of(page, count);
 
 		return ticketRepository.findByTitleIgnoreCaseContainingAndStatusAndPriorityAndUserIdOrderByDateDesc(title,
-				status, priority, pageRequest);
+				status, priority, userId, pageRequest);
 	}
 
 	public Page<Ticket> findByNumber(int page, int count, Integer number) {
@@ -83,6 +83,6 @@ public class TicketService {
 		PageRequest pageRequest = PageRequest.of(page, count);
 
 		return ticketRepository.findByTitleIgnoreCaseContainingAndStatusAndPriorityAndAssignedUserIdOrderByDateDesc(
-				title, status, priority, pageRequest);
+				title, status, priority, assignedUser, pageRequest);
 	}
 }
