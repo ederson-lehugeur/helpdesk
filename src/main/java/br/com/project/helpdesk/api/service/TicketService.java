@@ -56,7 +56,7 @@ public class TicketService {
 	public Page<Ticket> findByParameters(int page, int count, String title, String status, String priority) {
 		PageRequest pageRequest = PageRequest.of(page, count);
 
-		return ticketRepository.findByTitleIgnoreCaseContainingAndStatusAndPriorityOrderByDateDesc(title, status,
+		return ticketRepository.findByTitleIgnoreCaseContainingAndStatusContainingAndPriorityContainingOrderByDateDesc(title, status,
 				priority, pageRequest);
 	}
 
@@ -64,7 +64,7 @@ public class TicketService {
 			String priority, String userId) {
 		PageRequest pageRequest = PageRequest.of(page, count);
 
-		return ticketRepository.findByTitleIgnoreCaseContainingAndStatusAndPriorityAndUserIdOrderByDateDesc(title,
+		return ticketRepository.findByTitleIgnoreCaseContainingAndStatusContainingAndPriorityContainingAndUserIdOrderByDateDesc(title,
 				status, priority, userId, pageRequest);
 	}
 
@@ -82,7 +82,7 @@ public class TicketService {
 			String priority, String assignedUser) {
 		PageRequest pageRequest = PageRequest.of(page, count);
 
-		return ticketRepository.findByTitleIgnoreCaseContainingAndStatusAndPriorityAndAssignedUserIdOrderByDateDesc(
+		return ticketRepository.findByTitleIgnoreCaseContainingAndStatusContainingAndPriorityContainingAndAssignedUserIdOrderByDateDesc(
 				title, status, priority, assignedUser, pageRequest);
 	}
 }
